@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Oswald');
+
+body {
+  --paragraph-font: "Croissant+one", sans-serif;
+  font-family: 'corrisant+one', sans-serif;
+  font-size: 22px;
+  background-color: #FFAF87; /* Slightly darker Accent2 color */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content {
+  flex: 1; /* Take up remaining vertical space */
+}
+
+#background {
+  height: 725px;
+  grid-column: 1/11;
+  grid-row: 4/9;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+nav {
+  background-color: #774936; /* Slightly darker Secondary color */
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+nav a {
+  text-align: center;
+  color: white; /* Slightly darker Primary color (nav-link-color) */
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #774936; /* Slightly darker Accent2 color */
+  color: #42BFDD; /* Slightly lighter Nav hover link color */
+}
+
+#hero-img {
+  width: 100%;
+}
+
+#hero {
+  max-width: 800px; /* Set the maximum width of the hero div */
+  margin: 0 auto; /* Center the hero div */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#hero img {
+  width: 100%; /* Make the image fill the container */
+  border: 2px solid #000000; /* Add a border around the image */
+}
+
+#hero img:hover {
+  transform: scale(1.05); /* Increase the size by 5% */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#basics {
+  border: 8px solid #A0AF84;
+  padding: 20px;
+  text-align: center;
+  float: left; /* Align to the left */
+  width: calc(50% - 20px); /* Set the width to 50% minus padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-color: white; /* Set the background color to white */
+}
+
+#otherdiv {
+  border: 8px solid #A0AF84; /* Set the border thickness and color for the other div */
+  padding: 20px;
+  text-align: center;
+  float: right; /* Align to the right */
+  width: calc(50% - 20px); /* Set the width to 50% minus padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-color: white; /* Set the background color to white */
+}
+
+#lastdiv {
+  border: 8px solid #A0AF84; /* Set the border thickness and color for the other div */
+  padding: 20px;
+  text-align: center;
+  float: right; /* Align to the right */
+  width: calc(50% - 20px); /* Set the width to 50% minus padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-color: white; /* Set the background color to white */
+}
+#basics:hover,
+#otherdiv:hover,
+#lastdiv:hover {
+  transform: scale(1.07); /* Increase the size by 7% on hover */
+}
+footer {
+    text-align: center; /* Center the text in the footer */
+    background-color: #774936; /* Match the background color of the navigation */
+    padding: 15px;
+  }
+  
+  footer p {
+    color: white;
+    margin: 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; /* Add some space between the links */
+  }
