@@ -92,11 +92,25 @@ nav a:hover {
   box-sizing: border-box; /* Include padding and border in the width */
   background-color: white; /* Set the background color to white */
 }
+#basics,
+#otherdiv,
+#lastdiv {
+  border: 8px solid #A0AF84;
+  padding: 20px;
+  text-align: center;
+  float: left; /* Align to the left */
+  width: calc(50% - 20px); /* Set the width to 50% minus padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-color: white; /* Set the background color to white */
+  transition: transform 0.3s ease; /* Add a smooth transition effect for scaling */
+}
+
 #basics:hover,
 #otherdiv:hover,
 #lastdiv:hover {
   transform: scale(1.07); /* Increase the size by 7% on hover */
 }
+
 footer {
     text-align: center; /* Center the text in the footer */
     background-color: #774936; /* Match the background color of the navigation */
@@ -113,3 +127,12 @@ footer {
     color: white;
     margin: 0 10px; /* Add some space between the links */
   }
+  footer a:hover {
+    color: #42BFDD; /* Set the color you want when hovering over footer links */
+    transition: color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+
+
+
+  

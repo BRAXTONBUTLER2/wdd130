@@ -1,0 +1,81 @@
+/* Center the switches on the screen */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 120px; /* Increase the width for a larger switch */
+    height: 60px; /* Increase the height for a taller switch */
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7FDBFF; /* Change the background color */
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 45px; /* Increase the height of the slider button */
+    width: 45px; /* Increase the width of the slider button */
+    left: 8px; /* Adjust the left position of the slider button */
+    bottom: 8px; /* Adjust the bottom position of the slider button */
+    background-color: #001f3f; /* Change the color of the slider button */
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #001f3f; /* Change the background color when checked */
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #001f3f; /* Change the box shadow color when focused */
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(60px); /* Increase the distance of the slider button */
+    -ms-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 75px; /* Increase the border radius for a rounder switch */
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  input[type=text] {
+    width: 250px; /* Increase the width for a bigger search input */
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
