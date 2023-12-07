@@ -57,6 +57,7 @@ nav {
 
 .faq .answer p {
     margin: 0;
+    padding: 1rem;
 }
 
 #images-container {
@@ -89,4 +90,12 @@ footer a {
 footer a:hover {
     color: #42BFDD;
     transition: color 0.3s ease;
+}
+.faq div img{
+
+    width:90%;
+    margin: 10px;
+
+
+
 }
